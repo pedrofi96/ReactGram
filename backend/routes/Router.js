@@ -2,7 +2,7 @@ const express = require("express");
 const router = express();
 
 //usando rotars importadas do UserRoutes
-router.use("api/users", require("./UserRoutes"));
+router.use("/api/users", require("./UserRoutes"));
 
 //Rota de Teste
 router.get("/", (req, res) => {
