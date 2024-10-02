@@ -7,13 +7,16 @@ import {
   BsFillPersonFill,
   BsFillCameraFill,
 } from "react-icons/bs";
+const handleSubmit = (e) =>{
+  e.preventDefault()
+}
 
 const Navbar = () => {
   return (
     <div>
       <nav id="nav">
         <Link to="/">ReactGram</Link>
-        <form id="search-form">
+        <form onSubmit={handleSubmit} id="search-form">
           <BsSearch />
           <input type="text" placeholder="Pesquisar" />
         </form>

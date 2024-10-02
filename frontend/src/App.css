@@ -1,7 +1,6 @@
 .container{
-  min-height: 70vh;
-  
-
-
+  max-width: 41%;
+  margin: auto;
+  padding: auto;
 
 }
